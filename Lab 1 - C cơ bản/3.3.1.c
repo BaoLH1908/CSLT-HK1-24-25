@@ -4,7 +4,7 @@ int main(){
   // Cau a
   int dai = 8;
   int rong = 7;
-  intt chuVi;
+  int chuVi;
   chuVi = (dai + rong)/2;
   printf("Chu vi hinh chu nhat co chieu dai %d va chieu rong %d la %d", dai, rong, chuVi);
   // Cau b
