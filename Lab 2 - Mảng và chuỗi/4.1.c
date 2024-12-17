@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     int arr[100];
     int i, n;
     // Câu 1
