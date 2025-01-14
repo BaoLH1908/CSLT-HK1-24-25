@@ -1,2 +1,11 @@
 Câu a: Ý nghĩa của dấu "*" trong "*pointer" ở dòng 4 và dòng 7 là giống nhau, vì:
-  - Trong cả hai trường hợp, dấu "*" được dùng để tham chiếu
+  - Trong cả hai trường hợp, dấu "*" được dùng để tham chiếu con trỏ "pointer", tức là truy cập giá trị mà con trỏ trỏ tới (ở đây là giá trị của biến "studentID").
+  - Ở dòng 4, "*pointer" được dùng để lưu giá trị nhập từ người dùng vào địa chỉ mà "pointer" trỏ tới.
+  - Ở dòng 7, "*pointer" được sử dụng để thay đổi giá trị tại địa chỉ mà con trỏ "pointer" đang trỏ tới.
+Câu b: Ở dòng 6, không có dấu "&" đằng trước "pointer" vì:
+  - "pointer" là một con trỏ đã trỏ đến địa chỉ của biến "studentID". Do đó, việc sử dụng "pointer" trong "scanf" thực chất đã là truyền địa chỉ của biến "studentID".
+  - Nếu thêm dấu "&" trước "pointer", user sẽ cố gắng truyền địa chỉ của chính con trỏ "pointer", điều này không đúng và sẽ báo lỗi.
+Câu c: Ý nghĩa dòng 7: Biểu thức này thực hiện cập nhật giá trị của "studentID" bằng cách:
+  - Lấy giá trị hiện tại của "studentID" (truy cập qua "*pointer");
+  - Nhân nó với chính giá trị đó (do cả "studentID" và "*pointer" đều trỏ đến cùng giá trị);
+  - Cộng kết quả đó vào giá trị hiện tại của "studentID".
