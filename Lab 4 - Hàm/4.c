@@ -15,7 +15,7 @@ int giaiThua(int n)
     return factor;
 }
 
-// Hàm tính chỉnh hợp chập k của n
+// Hàm tính tổ hợp chập k của n
 int toHop(int n, int k)
 {
     int num = giaiThua(n);
