@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int a, b;
+// Hàm giải phương trình bậc nhất
 float giaiPTBac1(int a, int b)
 {
     float x;
