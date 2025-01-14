@@ -1,0 +1,2 @@
+Câu a: Ý nghĩa của dấu "*" trong "*pointer" ở dòng 4 và dòng 7 là giống nhau, vì:
+  - Trong cả hai trường hợp, dấu "*" được dùng để tham chiếu
