@@ -1,63 +1,29 @@
 #include <stdio.h>
-
-void concatenateStrings(char *s1, char *s2) {
-    int len1 = 0, len2 = 0, i = 0;
-
-    // Tính độ dài của S1
-    while (s1[len1] != '\0') {
-        len1++;
+#include <string.h>
+int main()
+{
+    char s1[100], s2[100];
+    int length1 = 0, length2 = 0;
+    int i = 0;
+    printf("Nhap chuoi ki tu S1: ");
+    scanf("%s", s1);
+    printf("Nhap chuoi ki tu S2: ");
+    scanf("%s", s2);
+    // Tính độ dài chuỗi S1, S2
+    while (s1[length1] != '\0'){
+        length1++;
     }
-
-    // Tính độ dài của S2
-    while (s2[len2] != '\0') {
-        len2++;
+    while (s2[length2] != '\0'){
+        length2++;
     }
-
+    
     // Nối chuỗi S2 vào cuối S1
-    for (i = 0; i < len2; i++) {
-        s1[len1 + i] = s2[i];
+    for (i = 0; i < length2; i++) {
+        s1[length1 + i] = s2[i];
     }
 
     // Kết thúc chuỗi bằng ký tự null
-    s1[len1 + len2] = '\0';
-}
-
-int main() {
-    char s1[200], s2[100];
-
-    // Nhập chuỗi S1
-    printf("Nhập chuỗi S1: ");
-    fgets(s1, sizeof(s1), stdin);
-
-    // Loại bỏ ký tự xuống dòng nếu có
-    int len = 0;
-    while (s1[len] != '\0') {
-        if (s1[len] == '\n') {
-            s1[len] = '\0';
-            break;
-        }
-        len++;
-    }
-
-    // Nhập chuỗi S2
-    printf("Nhập chuỗi S2: ");
-    fgets(s2, sizeof(s2), stdin);
-
-    // Loại bỏ ký tự xuống dòng nếu có
-    len = 0;
-    while (s2[len] != '\0') {
-        if (s2[len] == '\n') {
-            s2[len] = '\0';
-            break;
-        }
-        len++;
-    }
-
-    // Gọi hàm nối chuỗi
-    concatenateStrings(s1, s2);
-
-    // Xuất chuỗi S1 sau khi nối
-    printf("Chuỗi S1 sau khi nối: %s\n", s1);
-
+    s1[length1 + length2] = '\0';
+    printf("Chuoi S1 sau khi noi chuoi S2: %s", s1);
     return 0;
 }
